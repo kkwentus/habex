@@ -1,0 +1,15 @@
+#!/bin/bash
+
+addgroup {{cfg.group}}
+adduser --disabled-password --ingroup {{cfg.user}} {{cfg.group}}
+
+chmod 755 {{pkg.svc_data_path}}
+
+# mkdir -p {{pkg.svc_data_path}}/docroot
+# mkdir -p {{pkg.svc_data_path}}/htdocs
+# mkdir -p {{pkg.svc_data_path}}/cgi-bin
+
+# cp {{pkg.path}}/cc-httpd-0.0.tar.gz {{pkg.svc_data_path}}/
+# tar -xvf {pkg.svc_data_path}}/cc-httpd-0.0.tar.gz
+# rm -rf {pkg.svc_data_path}}/cc-httpd-0.0.tar.gz
+chmod -R 755 {{pkg.svc_data_path}}
