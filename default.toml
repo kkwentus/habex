@@ -4,7 +4,6 @@
 
 #httpd.conf settings
 serveradmin = "leo.fillmore@cort.com"
-#servername = "localhost"
 servername = {{hostname}}
 serverport = "80"
 listen = ["80"]
